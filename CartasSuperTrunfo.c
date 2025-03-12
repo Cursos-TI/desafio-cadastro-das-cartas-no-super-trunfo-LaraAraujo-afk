@@ -8,17 +8,17 @@
 
 int main() {
     // declarando as variaveis
-    char estado1, estado2;
-    char codigo_cidade1[5], codigo_cidade2;
+    char estado1[5], estado2[5];
+    char codigo_cidade1[5], codigo_cidade2[5];
     char nome_cidade1[50], nome_cidade2[50];
     int populacao1, populacao2;
     float area_km1, area_km2;
     float PIB1, PIB2;
-    int ponto_turisticos1, ponto_turisticos2;
+    int pontoturisticos1, pontoturisticos2;
 
     //cadastro da carta 1
     printf("Digite a letra do estado da primeira carta: \n");
-    scanf("%c, &estado1");
+    scanf("%c", &estado1);
 
     printf("Digite o codigo da primeira carta: \n");
     scanf("%s", &codigo_cidade1);
@@ -36,17 +36,17 @@ int main() {
     scanf("%f", &PIB1);
 
     printf("Digite o Numero de pontos turisticos: \n");
-    scanf("%f", &ponto_turisticos1);
+    scanf(" %d", &pontoturisticos1);
 
     //Cadastrando 2 carta
     printf("Digite a letra da segunda carta: \n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
 
     printf("Digite o codigo da segunda carta: \n");
-    scanf("%s", &codigo_cidade2);
+    scanf(" %s", &codigo_cidade2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nome_cidade2);
+    scanf(" %s", &nome_cidade2);
 
     printf("Digite o Tamanho da População: \n");
     scanf("%d", &populacao2);
@@ -58,7 +58,7 @@ int main() {
     scanf("%f", &PIB2);
 
     printf("Digite o numero de pontos turisticos: \n");
-    scanf("%f", &ponto_turisticos2);
+    scanf(" %d", &pontoturisticos2);
 
     // exibindo os dados das cartas:
 
@@ -70,7 +70,7 @@ int main() {
     printf("População: %d \n", populacao1);
     printf("Area do estado: %f \n", area_km1);
     printf("PIB: %.2f Bilhões de reais \n", PIB1);
-    printf("Pontos turisticos: %f \n", ponto_turisticos1);
+    printf("Pontos turisticos: %f \n", pontoturisticos1);
 
     //carta 2
     printf("Carta 2:\n");
@@ -80,7 +80,7 @@ int main() {
     printf("População: %d \n", populacao2);
     printf("Area do estado: %f \n", area_km2);
     printf("PIB: %.2f Bilhões de reais \n", PIB2);
-    printf("Pontos turisticos: %f \n", ponto_turisticos2);
+    printf("Pontos turisticos: %f \n", pontoturisticos2);
 
 
 
