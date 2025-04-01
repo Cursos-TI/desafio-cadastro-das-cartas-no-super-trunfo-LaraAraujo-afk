@@ -68,6 +68,12 @@ int main() {
     densidade1 = populacao1 / area_km1;
     densidade2 = populacao2 / area_km2;
 
+    if ( populacao1 > populacao2){
+        printf("A população da carta1 e maior! Vitória! /n");
+    } else {
+        printf("A população da carta2 e maior! Derrota!");
+    }
+
     PIBpercapita1 = PIB1 / populacao1;
     PIBpercapita2 = PIB2 / populacao2;
 
